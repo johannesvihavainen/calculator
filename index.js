@@ -9,7 +9,6 @@ function handleOperatorClick(op) {
     firstValue = display.value;
     operator = op;
     clearDisplay()
-
 }
 
 function appendToDisplay(input) {
