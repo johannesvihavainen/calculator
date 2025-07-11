@@ -12,7 +12,12 @@ function handleOperatorClick(op) {
 }
 
 function appendToDisplay(input) {
-    display.value += input
+    if (input === '.' && display.value.includes('.')) {
+        return;
+    } else {
+        display.value += input
+    }
+
 }
 
 function clearDisplay() {
